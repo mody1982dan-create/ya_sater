@@ -1,0 +1,15 @@
+إصلاح تعليق «جاري فتح اللعبة...» — يا ساتر! جتنا عزيمة
+
+1. فك ضغط الأرشيف.
+2. افتح github.com/mody1982dan-create/ya_sater.
+3. ارفع الملفات إلى الصفحة الرئيسية (root) للمستودع مباشرة، وليس داخل مجلد.
+4. وافق على استبدال الملفات ذات الأسماء نفسها (Commit changes).
+5. تأكد من ظهور الملفات index.html و online.js و game_data.js و firebase-config.js و solo.html بجانب بعضها.
+6. انتظر حتى يصبح نشر GitHub Pages أخضر في تبويب Actions.
+7. افتح https://mody1982dan-create.github.io/ya_sater/?v=2 من متصفح عادي.
+
+إن استمرت المشكلة، ستظهر رسالة خطأ واضحة بدل التعليق. صوّرها وارسِلها.
+
+مهم: لا ترفع ZIP نفسه؛ ارفع محتوياته بعد فك الضغط.
+ملف firebase-rules.json موجود للمرجعية فقط، ويجب نشر قواعده داخل Firebase Console > Realtime Database > Rules > Publish.
+فعل Anonymous في Firebase Authentication > Sign-in method.

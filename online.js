@@ -83,7 +83,7 @@ async function api(action,payload){
  }
  if(action==='start'){
   const snap=await get(ref(db,'rooms/'+code+'/players'));
-  if(snap.size<2)throw Error('لازم شخصين على الأقل لبدء العزيمة.');
+  if(Object.keys(snap.val()||{}).length<2)throw Error('لازم شخصين على الأقل لبدء العزيمة.');
   await hostMeta(code,m=>{if(m.phase!=='lobby')return;m.phase='vote';return m;});return {ok:true};
  }
  if(action==='reveal'){

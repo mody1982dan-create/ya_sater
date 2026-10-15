@@ -9,5 +9,33 @@
 </style>
 </head>
 <body><main class="page"><header class="top"><div class="brand"><span class="symbol">🫖</span><span>يا ساتر! جتنا عزيمة</span></div><a href="solo.html">🎲 جهاز واحد</a></header><div id="app" class="loading">جاري فتح اللعبة...</div><p class="foot">غرف خاصة برمز دخول • من ٢ إلى ١٠ لاعبين • بدون تسجيل حساب</p></main>
-<script type="module" src="./online.js"></script>
+<script>
+// تحميل متسامح مع الأخطاء: بدلاً من البقاء على "جاري فتح اللعبة" إلى الأبد.
+(function () {
+  const app = document.getElementById('app');
+  const waiting = () => app.classList.contains('loading') && app.textContent.includes('جاري فتح اللعبة');
+  let resolved = false;
+  const plain = value => String(value || 'سبب غير معروف').slice(0, 600);
+  function showBootFailure(reason) {
+    if (resolved || !waiting()) return;
+    resolved = true;
+    app.className = 'paper';
+    app.innerHTML = `<div class="head"><span class="eyebrow">مساعدة في التشغيل</span><h1>تعذّر فتح العزيمة 😅</h1><p>الصفحة منشورة، لكن أحد ملفات التشغيل لم يُحمّل.</p></div>
+      <div class="body"><p class="warning">المشكلة: <span id="detail"></span></p>
+      <p>تأكدي من وجود الملفات <b>online.js</b> و<b>game_data.js</b> و<b>firebase-config.js</b> بجانب <b>index.html</b> في GitHub.</p>
+      <div class="btn-row"><button id="retryBoot" class="btn main">🔄 إعادة المحاولة</button><a class="btn ghost" href="./solo.html" style="text-align:center;text-decoration:none">🎲 اللعب بجهاز واحد</a></div></div>`;
+    document.getElementById('detail').textContent = plain(reason);
+    document.getElementById('retryBoot').onclick = () => location.reload();
+  }
+  window.addEventListener('error', event => {
+    if (waiting() && event.message) showBootFailure(event.message);
+  });
+  window.addEventListener('unhandledrejection', event => {
+    if (waiting()) showBootFailure(event.reason?.message || event.reason);
+  });
+  // في حال تأخر الخادم أو حُجبت خدمات Firebase على متصفح الجوال.
+  setTimeout(() => { if (waiting()) showBootFailure('تأخر تحميل JavaScript أو Firebase. تأكدي من اتصال الإنترنت ووجود الملفات.'); }, 15000);
+  import('./online.js?v=2').catch(error => showBootFailure(error?.message || error));
+})();
+</script>
 </body></html>
