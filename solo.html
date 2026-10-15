@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#3b2849" />
+  <meta name="description" content="يا ساتر! جتنا عزيمة — لعبة قرارات وتحديات جماعية سعودية للعائلة والصديقات." />
+  <title>يا ساتر! جتنا عزيمة 🎉</title>
+  <style>
+    :root{--ink:#382943;--muted:#766b7b;--plum:#50365f;--plum2:#6c4b7f;--accent:#ef765f;--orange:#ffb66f;--teal:#308e82;--cream:#fff9f0;--card:#ffffff;--line:#eadfe4;--soft:#f8eaf1;--shadow:0 18px 55px rgba(69,44,72,.11)}
+    *{box-sizing:border-box}html{min-height:100%;background:#fdf4ee}body{margin:0;min-height:100vh;color:var(--ink);font-family:"Tahoma","Arial",system-ui,sans-serif;background:radial-gradient(ellipse at 85% 2%,#ffe7ce 0%,transparent 38%),radial-gradient(ellipse at 5% 80%,#f2dff1 0%,transparent 42%),#fff8f3;line-height:1.65}
+    button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.6}button:focus-visible,input:focus-visible{outline:3px solid #af76b0;outline-offset:3px}
+    .wrap{max-width:1000px;margin:0 auto;padding:22px 18px 80px}.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:17px}.brand-symbol{width:40px;height:40px;border-radius:14px;background:var(--plum);color:#fff;display:grid;place-items:center;font-size:23px;box-shadow:0 6px 15px #50365f33}.top-actions{display:flex;gap:8px}.icon-btn{min-height:39px;padding:7px 12px;border:1px solid #e6dce4;border-radius:13px;background:#ffffffc7;color:var(--ink);font-weight:700}
+    .shell{border-radius:30px;overflow:hidden;border:1px solid #f3e7e8;background:#ffffffda;box-shadow:var(--shadow);backdrop-filter:blur(4px)}.hero{position:relative;padding:36px 34px 31px;background:linear-gradient(125deg,#513661,#806090);color:#fff;overflow:hidden;isolation:isolate}.hero:after{content:"";position:absolute;width:300px;height:300px;background:#ffffff12;border-radius:50%;left:-90px;top:-135px;z-index:-1}.hero:before{content:"";position:absolute;width:170px;height:170px;background:#f6b77b33;border-radius:35%;left:20%;bottom:-120px;transform:rotate(20deg);z-index:-1}.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.3;margin:5px 0 8px;font-weight:900;letter-spacing:-1.2px}.hero p{max-width:640px;font-size:17px;margin:6px 0;color:#f6eaf8}.chip{display:inline-flex;align-items:center;gap:5px;border:1px solid #ffffff66;background:#ffffff1d;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:bold}.hero-icons{position:absolute;bottom:22px;left:35px;font-size:48px;letter-spacing:4px;transform:rotate(-7deg);filter:drop-shadow(0 9px 3px #39214740)}
+    .body{padding:30px 34px 34px}.section-label{font-size:13px;color:#9a6a8d;letter-spacing:.4px;font-weight:900;margin:0 0 9px}.title{font-size:clamp(24px,3.5vw,33px);line-height:1.4;margin:0 0 12px}.subtitle{color:var(--muted);margin:0 0 20px}.row{display:flex;align-items:center;gap:11px;flex-wrap:wrap}.between{justify-content:space-between}.pill{background:#faecf4;border-radius:999px;padding:4px 11px;font-weight:bold;font-size:12px;color:#714969}.help-list{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0}.help-item{border:1px solid #eee2e9;background:#fffbfd;border-radius:17px;padding:13px;text-align:center}.help-item b{display:block;margin:3px 0}.help-item span{color:#786c7b;font-size:12px}.big-emoji{font-size:29px}.name-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:13px}.name-line{display:flex;align-items:center;gap:7px;border-radius:15px;background:#fff;border:1px solid var(--line);padding:5px 7px}.name-line input{min-width:0;width:100%;border:0;outline:0;background:transparent;padding:10px 6px;color:var(--ink);font-weight:800}.num-bubble{display:grid;place-items:center;width:27px;height:27px;flex:0 0 auto;border-radius:10px;background:#f5e4ef;color:#784e75;font-weight:900;font-size:12px}.remove{border:0;border-radius:8px;background:#fff0f0;color:#a85055;padding:3px 9px;font-size:18px}.add{border:1px dashed #b59bb6;background:#fff7fb;padding:11px 17px;border-radius:14px;color:#684470;font-weight:800;margin-top:12px}.buttons{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:23px}.primary,.secondary{border:0;border-radius:16px;min-height:53px;padding:11px 22px;font-size:16px;font-weight:900;transition:transform .14s,filter .14s}.primary{color:white;background:linear-gradient(125deg,#e96d62,#df8a67);box-shadow:0 8px 18px #ef765f33}.primary:hover,.secondary:hover{transform:translateY(-1px);filter:brightness(.98)}.secondary{color:var(--plum);background:#f5e6f2;border:1px solid #ebd5e5}.fine{font-size:13px;color:#847786;margin:14px 0 0}.error{background:#fff0ee;border:1px solid #ffd1cb;color:#a43d43;padding:9px 13px;border-radius:12px;display:none;margin-top:12px}.error.visible{display:block}
+    .stage-line{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}.track{height:10px;border-radius:999px;background:#ecdfec;overflow:hidden;margin-bottom:19px}.track span{height:100%;display:block;border-radius:999px;background:linear-gradient(90deg,#fbba7b,#e97a6d);transition:width .3s}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:20px}.stat{border:1px solid #f0e5eb;background:#fff;border-radius:17px;padding:12px}.stat-top{display:flex;align-items:center;justify-content:space-between;gap:5px;font-weight:bold;font-size:13px}.stat-top b{font-size:17px;font-variant-numeric:tabular-nums}.meter{background:#f1e8ec;height:8px;margin-top:8px;border-radius:8px;overflow:hidden}.meter span{display:block;height:100%;border-radius:8px;transition:width .4s}.meter.budget span{background:#db955b}.meter.time span{background:#7d65ae}.meter.mood span{background:#48a395}.meter.low span{background:#da5d59}
+    .story{border:1px solid #eedde8;background:linear-gradient(160deg,#fffdff,#fff7f8);border-radius:22px;padding:23px;position:relative}.story .emoji{font-size:46px;line-height:1.3}.story h2{margin:4px 0 8px;line-height:1.35;font-size:clamp(22px,3.5vw,30px)}.story p{font-size:16px;max-width:650px;margin:0;color:#66596b}.player-callout{display:inline-flex;gap:9px;align-items:center;margin:15px 0 16px;background:#fff3e1;border:1px solid #ffdfae;padding:7px 13px;border-radius:14px;font-weight:800;color:#6d4d43}.choices{display:grid;grid-template-columns:1fr;gap:11px}.choice{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:15px 17px;text-align:right;border-radius:16px;background:#fff;border:1px solid #ebdde5;font-weight:800;color:#4c3656;min-height:62px;box-shadow:0 3px 10px #7c5d7b0b;transition:transform .12s,box-shadow .12s,border-color .12s}.choice:hover{transform:translateY(-2px);border-color:#de9dc3;box-shadow:0 7px 21px #ab7a8d20}.choice em{font-style:normal;background:#f6e8f1;border-radius:11px;padding:3px 9px;color:#8e6288;font-size:20px;flex:0 0 auto}.playerbar{border-top:1px solid #f1e5ec;margin-top:23px;padding-top:18px}.player-title{font-size:13px;color:#827382;font-weight:bold;margin:0 0 10px}.chips{display:flex;flex-wrap:wrap;gap:7px}.playerchip{border:1px solid #e8dbe4;border-radius:12px;padding:6px 10px;background:#fff;color:#6d5d6d;font-weight:bold;font-size:13px}.playerchip.active{background:#52365e;color:#fff;border-color:#52365e}
+    .result-icon{font-size:67px;line-height:1.2}.result-heading{font-size:28px;font-weight:900;margin:8px 0}.effect{padding:18px;background:#fff8ed;border:1px solid #ffe5c9;border-radius:18px;margin:18px 0;color:#684c3c;font-size:16px}.delta-list{display:flex;flex-wrap:wrap;gap:8px;margin:13px 0}.delta{font-weight:bold;background:#f7eff3;color:#67506e;padding:6px 11px;border-radius:99px;font-size:13px}.delta.good{background:#e3f5ed;color:#267461}.delta.bad{background:#ffeded;color:#b04d53}.points{color:#917044;font-size:15px;font-weight:900}
+    .challenge{background:linear-gradient(125deg,#fff4df,#fff3f0);border:1px solid #fbe2ba;border-radius:22px;padding:23px}.challenge h2{font-size:clamp(23px,3.7vw,33px);margin:7px 0}.timer{font-size:54px;font-weight:900;line-height:1.2;letter-spacing:2px;font-variant-numeric:tabular-nums;color:#8c5168;text-align:center;padding:14px 0}.timer.finished{color:#bc434d}.challenge-controls{text-align:center}.hint{color:#746476;font-size:13px;margin-top:5px}.challenge-judge{margin-top:13px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.success{background:#e4f5e9;color:#2b7b5f}.failure{background:#ffeded;color:#a5454a}
+    .end-box{text-align:center;background:linear-gradient(130deg,#563860,#8f6599);color:#fff;border-radius:24px;padding:29px 18px}.end-box .badge-score{display:inline-block;background:#ffffff24;padding:7px 14px;border-radius:99px;border:1px solid #ffffff55;font-weight:bold}.end-box h2{font-size:clamp(30px,5vw,45px);margin:7px 0}.end-box p{max-width:600px;margin:8px auto;color:#f6eaf9}.leaderboard{margin-top:20px;display:grid;gap:9px}.leader{display:flex;align-items:center;justify-content:space-between;padding:14px;background:white;border:1px solid var(--line);border-radius:15px;font-weight:800}.leader:first-child{border-color:#ffce91;background:#fffbf1}.leader .medal{font-size:20px;margin-left:5px}.foot{text-align:center;font-size:12px;color:#9a8d9c;margin:20px 0}details{background:#fff9fb;border:1px solid var(--line);border-radius:13px;padding:10px 14px;margin:18px 0 0}summary{cursor:pointer;font-weight:bold}details p{color:#716475;margin:8px 0;font-size:14px}
+    .toast{position:fixed;bottom:25px;left:50%;transform:translateX(-50%);background:#3a2942;color:white;padding:12px 20px;border-radius:16px;box-shadow:0 5px 25px #44344b44;display:none;z-index:10}.toast.show{display:block}.confetti{position:fixed;pointer-events:none;inset:0;overflow:hidden;z-index:15}.confetti i{position:absolute;top:-10vh;width:9px;height:14px;background:var(--c);left:var(--x);transform:rotate(var(--r));animation:fall 1.6s linear forwards}@keyframes fall{to{top:110vh;transform:rotate(480deg)}}
+    @media(max-width:640px){.wrap{padding:10px 10px 55px}.topbar{margin:8px 4px 12px}.brand{font-size:14px}.brand-symbol{width:34px;height:34px;font-size:20px}.icon-btn{padding:7px;font-size:12px}.shell{border-radius:22px}.hero{padding:25px 20px 28px}.hero h1{font-size:32px}.hero p{font-size:14px;max-width:270px}.hero-icons{font-size:34px;left:12px;bottom:7px}.body{padding:20px 15px 22px}.name-grid{gap:8px}.name-line{padding:4px}.name-line input{padding:9px 3px;font-size:13px}.num-bubble{width:23px}.help-list{gap:5px}.help-item{padding:8px 4px}.help-item span{font-size:11px}.help-item b{font-size:12px}.big-emoji{font-size:24px}.stats{gap:7px}.stat{padding:9px 6px}.stat-top{font-size:11px}.stat-top b{font-size:15px}.story{padding:17px}.story p{font-size:14px}.choice{padding:12px;font-size:14px}.stage-line{font-size:12px}.buttons>*{flex:1}.challenge{padding:17px}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar">
+      <div class="brand"><span class="brand-symbol">🫖</span><span>لعبة اللمّة</span></div>
+      <div class="top-actions"><button class="icon-btn" id="soundBtn" aria-label="تغيير إعداد الصوت">🔊 الصوت شغال</button><button class="icon-btn" id="homeBtn" aria-label="العودة للبداية">⌂ الرئيسية</button></div>
+    </header>
+    <div id="app" aria-live="polite"></div>
+    <div class="foot">يا ساتر! جتنا عزيمة • نسخة تجريبية قابلة للعب • تعمل دون إنترنت • وضع الجهاز الواحد: الأسماء تُحفظ محليًا</div>
+  </main>
+  <div class="toast" id="toast" role="status"></div>
+  <script>
+  'use strict';
+  const SAVE_KEY='ya_sater_azima_v1';
+  const SOUND_KEY='ya_sater_sound_v1';
+  const statsMeta=[['budget','💰','الميزانية'],['time','⏳','الوقت'],['mood','💗','وناسة الضيوف']];
+  const acts=[
+    {name:'التجهيز',icon:'🏠',intro:'قبل وصول الضيوف',main:{emoji:'📱',title:'وصلتك رسالة تخوّف!',desc:'قبل العزيمة بساعة، تجيك رسالة: «ترانا بنجي ومعنا ضيفتين زيادة». الأكل محسوب بالحبة، وش الخطة؟',options:[
+      {t:'أزيد الأكل وأتوكل على الله',r:'كسبتي قلوب الضيوف، بس الميزانية قالت: آه يا جيبي!',d:[-18,-12,13],p:9,to:'a'},
+      {t:'أرتب الموجود بذكاء وأوسع السفرة',r:'منظر السفرة صار مرتب، والكل يحسبك مخططة من أسبوع.',d:[-8,-10,11],p:12,to:'b'},
+      {t:'أطلب من البنات كل وحدة تجيب طبق',r:'خطة جماعية سريعة، بس واضح إن الكل يحب الحلويات!',d:[-3,7,1],p:8,to:'c'}]},
+      follow:{
+       a:{emoji:'🔥',title:'الفرن عاندك!',desc:'بعد ما زدتي الكمية، اكتشفتي إن الفرن صغير وما يكفي صينيتين. ووقت العزيمة يركض!',options:[
+        {t:'أقسم الطبخ على دفعتين',r:'طلع الأكل مضبوط، بس ضاعت منكم دقائق ثمينة.',d:[0,-14,10],p:10},
+        {t:'أحوّل جزء من الطبخ لمقلاة سريعة',r:'حل سريع أنقذ الموقف، ومعه ريحة تجوع الجيران.',d:[-4,-6,9],p:12},
+        {t:'أطلب طبق جاهز من المطعم',r:'الطبق وصل في وقته، لكن الميزانية تبي إجازة.',d:[-16,6,12],p:8}]},
+       b:{emoji:'🍽️',title:'وين الصحون الإضافية؟',desc:'ضبطتي الأكل، لكن يوم بدأتي تجهزين السفرة طلع عدد الصحون أقل من الحضور!',options:[
+        {t:'أستعير طقم من الجارة',r:'جارتك أنقذت الموقف، ووصل طقم يفتح النفس.',d:[0,-9,10],p:12},
+        {t:'أخلط الطقمين وأقول هذا ديكور',r:'طلعت سفرة ملوّنة كأنها تصميم خاص!',d:[0,5,5],p:10},
+        {t:'أشتري صحون إضافية بتوصيل سريع',r:'وصلت الصحون، ونجحت الخطة بتكلفة محسوبة.',d:[-12,1,8],p:9}]},
+       c:{emoji:'🧁',title:'حفلة حلويات بدل عشاء!',desc:'الطبق الأول كيك، والثاني كيك، والثالث معمول! وكل وحدة حسبت الثانية بتجيب العشاء.',options:[
+        {t:'أسوي طبق مالح سريع من الموجود',r:'صحن بسيط لكنه خطف الأضواء من الحلويات.',d:[-4,-13,10],p:12},
+        {t:'أحوّلها لبوفيه خفيف وأرتب التقديم',r:'الضيوف انبسطوا بالفكرة، بس بعضهم يدور رز.',d:[-2,7,1],p:9},
+        {t:'أطلب عشاء سريع من مطعم قريب',r:'جاء العشاء، وراحت معه أغلب الميزانية.',d:[-20,2,12],p:8}]}
+      }},
+    {name:'الاستقبال',icon:'🚪',intro:'الضيوف عند الباب',main:{emoji:'🔔',title:'يا ساتر! وصلوا بدري!',desc:'ما خلصتي الترتيب، إلا الجرس يدق! الضيفات وصلوا قبل الموعد بنصف ساعة. وش تسوين؟',options:[
+      {t:'أفتح الباب وأستقبلهم بابتسامة كبيرة',r:'الترحيب كان يفتح النفس... حتى لو المخدات للحين مبعثرة.',d:[0,-12,15],p:12,to:'a'},
+      {t:'أكلف وحدة تستقبل والثانية تكمّل الترتيب',r:'اشتغل الفريق كأنه خلية نحل، وكل شيء يمشي.',d:[0,-5,12],p:11,to:'b'},
+      {t:'أرسل: «خمس دقايق ويفتح الباب»',r:'كسبتي دقائق، لكن المجموعة بدأت ترسل علامات استفهام!',d:[0,6,-10],p:6,to:'c'}]},
+      follow:{
+       a:{emoji:'☕',title:'القهوة راحت فيها!',desc:'الضيفات جلسوا، لكن القهوة توها على النار، وأول سؤال: «القهوة وينها؟»',options:[
+        {t:'أقدم تمر ومويه وأطقطق معهم لين تجهز',r:'سوالفك غطت على التأخير، ومرت الأزمة بسلام.',d:[0,-6,15],p:12},
+        {t:'أطلع الشاهي أول وأقول تغيير جو',r:'فيه من عشق الشاهي، وفيه من يسأل عن الدلة.',d:[-2,1,5],p:9},
+        {t:'أستعين بأختي تتولى القهوة بالكامل',r:'وصلت القهوة مضبوط، والفريق يستاهل تصفيق.',d:[0,-4,11],p:10}]},
+       b:{emoji:'🛋️',title:'اختفى مكان الجلسة!',desc:'استقبال ممتاز، لكن المقاعد ما تكفي وكل شوي تدخل ضيفة جديدة.',options:[
+        {t:'أرتب جلسة أرضية أنيقة بسرعة',r:'صارت الجلسة أوسع وأدفأ، والجميع يمدحونها.',d:[-2,-8,15],p:12},
+        {t:'أنقل المقاعد من الغرفة الثانية',r:'انحل الموقف بعد حملة نقل جماعية.',d:[0,-13,9],p:10},
+        {t:'أقسم الضيفات بين جلستين',r:'توزعوا مجموعتين، والمشكلة إن السوالف تفرقت.',d:[0,7,-5],p:7}]},
+       c:{emoji:'📞',title:'مكالمة الأم!',desc:'قبل ما تفتحين الباب، اتصلت أمك: «ليش واقفين البنات برا؟»',options:[
+        {t:'أفتح فورًا وأعتذر بمزحة',r:'ضحكوا كلهم وانتهت السالفة قبل ما تبدأ.',d:[0,-5,12],p:12},
+        {t:'أطلب من أختي تفتح وأكمل',r:'تعاون جميل، لكن عليك مهمة تدارك الجو.',d:[0,0,6],p:10},
+        {t:'أقول كنت أسوي مفاجأة دخول',r:'ضحك البعض، والبعض مو مقتنع بالمفاجأة!',d:[0,3,-1],p:8}]}
+      }},
+    {name:'السفرة',icon:'🍚',intro:'لحظة العشاء',main:{emoji:'🍲',title:'العشاء يحتاج خطة إنقاذ!',desc:'وقت العشاء، إحدى الصحون طلعت حارة مرة والثاني ناقص ملح... وكل العيون عليك!',options:[
+      {t:'أسوي ركن إضافات: لبن وليمون وملح',r:'كل ضيفة ضبطت صحنها على ذوقها، وفكرتك عجبتهم.',d:[-5,-7,15],p:12,to:'a'},
+      {t:'أعترف بطرافة إن الشيف اليوم متحمس',r:'ضحكوا من قلب، لكن لازم تنقذين الوضع بسرعة.',d:[0,3,7],p:11,to:'b'},
+      {t:'أبدل الطبق بصينية احتياطية',r:'دخلت الصينية البديلة مثل بطلة المشهد، لكن الوقت تأخر.',d:[-11,-12,12],p:9,to:'c'}]},
+      follow:{
+       a:{emoji:'🥄',title:'اختفت ملاعق التقديم!',desc:'جهزتي ركن الإضافات، لكن ملاعق التقديم ضاعت، والكل واقف عند السفرة.',options:[
+        {t:'أطلع ملاعق نظيفة بديلة بسرعة',r:'انتهت الأزمة محد حتى انتبه لها.',d:[0,-4,12],p:12},
+        {t:'أخلي البنات يتسابقن يلقونها',r:'تحولت المهمة للعبة قصيرة والكل يضحك.',d:[0,-8,11],p:11},
+        {t:'أوزع الطعام أنا بنفسي',r:'كسبتي مدح الكرم لكن انشغلتي عن الجلسة.',d:[0,-13,7],p:9}]},
+       b:{emoji:'🧂',title:'التحدي انتقل للمطبخ!',desc:'بعد ضحكة الشيف، قامت وحدة تسألك: «طيب وش الحل الرسمي للملح؟»',options:[
+        {t:'أجيب إضافات وأحوّلها ركن تذوق',r:'الطبق صار تجربة ممتعة بدل ما يكون مشكلة.',d:[-5,-8,15],p:12},
+        {t:'أجمع الآراء وأسوي تصويت أفضل طبق',r:'ضحكوا معك، وصار الموضوع تسلية على السفرة.',d:[0,-3,9],p:11},
+        {t:'أجيب صحن احتياطي من الثلاجة',r:'الصحن البديل سدّ الفراغ، لكنه يحتاج تجهيز.',d:[-7,-12,10],p:9}]},
+       c:{emoji:'🚚',title:'وصلت الصينية... غلط!',desc:'الصينية الاحتياطية وصلت، لكنها أصغر مما توقعتي. وفيه ضيفات ينتظرون حصتهم.',options:[
+        {t:'أقسم الطعام لقيمات تقديم صغيرة',r:'ما أحد لاحظ قلة الكمية من حلاوة التقديم.',d:[0,-9,12],p:12},
+        {t:'أضيف مقبلات سريعة من الثلاجة',r:'المقبلات أنقذت السفرة بصمت.',d:[-5,-8,13],p:11},
+        {t:'أطلب إضافة مستعجلة من المطعم',r:'كفى الأكل الجميع، لكن المصاريف زادت.',d:[-19,3,11],p:8}]}
+      }},
+    {name:'الختام',icon:'🎀',intro:'قبل توديع الضيوف',main:{emoji:'📸',title:'لحظة الصورة الجماعية!',desc:'الكل متحمس لصورة تذكارية... لكن جوال المصورة علّق قبل اللقطة، وبعض الضيفات مستعجلات.',options:[
+      {t:'أجمعهم وأستخدم جوال بديل',r:'طلعت لقطة حلوة، بس الترتيب أخذ وقت.',d:[0,-8,13],p:12,to:'a'},
+      {t:'أحول الصورة لتحدي وضعيات مضحكة',r:'انفجر المكان ضحك، وكل وحدة تبي صورة ثانية.',d:[0,-10,18],p:12,to:'b'},
+      {t:'أترك التصوير وأوزع هدايا بسيطة',r:'اللفتة جميلة، لكن الكل يقول: «وين صورتنا؟»',d:[-12,4,10],p:9,to:'c'}]},
+      follow:{
+       a:{emoji:'🔋',title:'الجوال البديل بطاريته 1٪!',desc:'صفّيتي الجميع للصورة، وفجأة يظهر تحذير البطارية!',options:[
+        {t:'أصور فورًا قبل ينطفئ',r:'لقطة واحدة أسطورية قبل انطفاء الجوال بالثانية.',d:[0,1,14],p:12},
+        {t:'أشبك الشاحن وأصور براحة',r:'نجحت الصورة، لكن الانتظار طال شوي.',d:[0,-10,11],p:10},
+        {t:'أخلي كل وحدة تصور من جوالها',r:'صار عندكم ألبوم كامل، بس مو كلهم في صورة وحدة.',d:[0,-5,9],p:9}]},
+       b:{emoji:'🤣',title:'صورة الضحك صارت ترند العائلة!',desc:'الكل يسأل عن الصورة، بس طلعت فيها حركة عفوية مضحكة من وحدة بالصدفة.',options:[
+        {t:'أستأذن الجميع قبل مشاركتها',r:'احترام ووناسة، والكل وافق على نسختها المضحكة.',d:[0,-4,16],p:12},
+        {t:'أحفظها ذكرى خاصة للجلسة',r:'اتفقوا تبقى ذكرى حلوة بينهم.',d:[0,2,12],p:11},
+        {t:'أعيد التصوير بشكل مرتب',r:'طلعت صورة جميلة، مع شوية تذمر لطيف.',d:[0,-9,8],p:9}]},
+       c:{emoji:'🎁',title:'باقي هدية وحدة!',desc:'وزعتي الهدايا وفجأة اكتشفتي إن هدية ناقصة، والضيفة الأخيرة قدامك!',options:[
+        {t:'أهديها علبة مرتبة من الحلويات',r:'طلعت هدية أدفأ من المتوقع، وكلهم انبسطوا.',d:[-3,-5,13],p:12},
+        {t:'أقول لها هديتك توصل لبيتك بكرة',r:'وعد لطيف، بس زاد عليك مشوار جديد.',d:[-12,0,9],p:10},
+        {t:'أحولها لقسيمة «أول ضيافة على حسابي»',r:'عجبتها الفكرة، وصار لكم موعد عزيمة ثانية!',d:[-7,3,12],p:11}]}
+      }}
+  ];
+  const challenges=[
+    {emoji:'🎭',title:'مثّلي الموقف!',desc:'مثّلي بدون كلام إن المكيّف خرب والضيفات توهن جالسات. الباقيات يخمنّ الموقف.',sec:25},
+    {emoji:'📺',title:'إعلان من قلب العزيمة',desc:'سوّي إعلانًا حماسيًا لصحن كبسة خيالي، كأنه أهم اختراع في التاريخ.',sec:20},
+    {emoji:'📝',title:'أسرع قائمة إنقاذ',desc:'اذكري خمس أشياء ممكن تنقذ عزيمة مفاجئة قبل انتهاء الوقت.',sec:20},
+    {emoji:'🎙️',title:'عذر رسمي جدًا',desc:'قدّمي اعتذارًا عن تأخر العشاء وكأنك متحدثة رسمية، بدون قول كلمة «تأخر».',sec:25},
+    {emoji:'🤐',title:'ممنوع الضحك',desc:'قولي «القهوة جاهزة يا جماعة» بجدية تامة ثلاث مرات، والباقيات يحاولن يضحكنك.',sec:20},
+    {emoji:'🪄',title:'اختراع طبق جديد',desc:'اخترعي اسمًا ووصفًا مضحكًا لطبق مصنوع من ثلاثة مكونات يختارها لك الفريق.',sec:25},
+    {emoji:'💬',title:'ردّ اللمّة',desc:'مثّلي ردًا دبلوماسيًا ظريفًا على ضيفة تقول: «وين الملح؟» بدون قول «ما أدري».',sec:20},
+    {emoji:'👑',title:'ملكة الاستقبال',desc:'قدّمي ترحيبًا ملكيًا مبالغًا فيه لواحدة من اللاعبات كأنها ضيفة شرف.',sec:25},
+    {emoji:'🧠',title:'ذاكرة الضيافة',desc:'اذكري ستة أشياء تقدم عادة في عزيمة، بشرط ما تتوقفين أكثر من ثانيتين بين كل واحدة.',sec:20},
+    {emoji:'🕵️',title:'مين أرسل الرسالة؟',desc:'مثّلي إنك استلمتي رسالة من ضيفة بتجيب معها خمس ضيفات إضافيات، وردّي عليها بطريقة مضحكة.',sec:25}
+  ];
+  let soundOn=true;
+  try {soundOn=localStorage.getItem(SOUND_KEY)!=='off';}catch(_){}
+  let saved=null;
+  try {saved=JSON.parse(localStorage.getItem(SAVE_KEY)||'null');if(!saved||!Array.isArray(saved.players)||!saved.mode)saved=null;}catch(_){saved=null;}
+  let game=null, screen='setup', draftNames=['نورة','سارة','هيا','منى'], ticker=null, remaining=0;
+  const app=document.getElementById('app');
+  const $=id=>document.getElementById(id);
+  const escapeHtml=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+  function beep(type){if(!soundOn)return;try{const Context=window.AudioContext||window.webkitAudioContext;if(!Context)return;const ctx=new Context(),o=ctx.createOscillator(),g=ctx.createGain();o.type='sine';o.frequency.setValueAtTime(type==='win'?620:type==='bad'?280:430,ctx.currentTime);o.frequency.exponentialRampToValueAtTime(type==='win'?970:type==='bad'?200:590,ctx.currentTime+.12);g.gain.setValueAtTime(.075,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.001,ctx.currentTime+.2);o.connect(g);g.connect(ctx.destination);o.start();o.stop(ctx.currentTime+.21);setTimeout(()=>ctx.close().catch(()=>{}),350);}catch(_){}}
+  function burst(){const el=document.createElement('div');el.className='confetti';for(let i=0;i<50;i++){const b=document.createElement('i');b.style.cssText=`--x:${Math.random()*100}%;--c:${['#ef765f','#ffb66f','#9064a0','#58ad91'][i%4]};--r:${Math.random()*350}deg;animation-delay:${Math.random()*.6}s`;el.appendChild(b);}document.body.appendChild(el);setTimeout(()=>el.remove(),2350);}
+  function toast(s){const el=$('toast');el.textContent=s;el.classList.add('show');clearTimeout(window._toastT);window._toastT=setTimeout(()=>el.classList.remove('show'),2500);}
+  function persist(){try{localStorage.setItem(SAVE_KEY,JSON.stringify(game));saved=game;}catch(_){}}
+  function clearTicker(){if(ticker){clearInterval(ticker);ticker=null;}}
+  function render(){clearTicker();$('soundBtn').textContent=soundOn?'🔊 الصوت شغال':'🔇 الصوت مقفل';$('homeBtn').style.display=screen==='setup'?'none':'';
+    if(screen==='setup')return renderSetup();
+    if(!game){screen='setup';return renderSetup();}
+    if(game.mode==='play')renderPlay();else if(game.mode==='choiceOutcome')renderChoiceOutcome();else if(game.mode==='challenge')renderChallenge();else if(game.mode==='challengeOutcome')renderChallengeOutcome();else if(game.mode==='finale')renderFinal();else{game.mode='play';renderPlay();}
+  }
+  function box(html){app.innerHTML='<div class="shell">'+html+'</div>';window.scrollTo({top:0,behavior:'instant'});}
+  function hero(kicker,title,sub,icon='🍰'){return `<div class="hero"><span class="chip">✦ ${kicker}</span><h1>${title}</h1><p>${sub}</p><div class="hero-icons" aria-hidden="true">${icon}</div></div>`;}
+  function renderSetup(){
+    box(hero('لعبة جماعية سعودية • نسخة تجريبية','يا ساتر! جتنا عزيمة!','العزيمة على الأبواب... أنقذوها بقراراتكم، وإذا تورطتوا حاولوا تضحكون!','☕ 🍰')+`<section class="body"><p class="section-label">كيف تلعبون؟</p><div class="help-list"><div class="help-item"><div class="big-emoji">👭</div><b>٢–١٠ لاعبات</b><span>جوال واحد يتناوبن عليه</span></div><div class="help-item"><div class="big-emoji">🎲</div><b>٨ مواقف</b><span>قرارات تغيّر مجرى السالفة</span></div><div class="help-item"><div class="big-emoji">🎭</div><b>٣ تحديات</b><span>تمثيل وضحك وسرعة</span></div></div><div class="story" style="margin-bottom:21px;background:#fff5ec"><b>📱 كل شخص من جواله؟</b><p style="margin:4px 0 12px">افتحوا غرفة خاصة برمز دخول، ويشارك فيها حتى ١٠ أشخاص مباشرة.</p><a class="primary" style="display:inline-block;text-decoration:none;text-align:center" href="online.html">فتح الغرفة الجماعية ←</a></div><p class="section-label">١. من معنا في العزيمة؟</p><p class="subtitle">اكتبوا أسماء اللاعبات. جميع الأسماء تبقى على هذا الجهاز فقط.</p><div id="names" class="name-grid">${draftNames.map((n,i)=>`<div class="name-line"><span class="num-bubble">${i+1}</span><input aria-label="اسم اللاعبة ${i+1}" data-player="${i}" value="${escapeHtml(n)}" maxlength="22" placeholder="اسم اللاعبة"/><button class="remove" data-remove="${i}" aria-label="حذف اللاعبة ${i+1}" title="حذف" ${draftNames.length<=2?'disabled':''}>×</button></div>`).join('')}</div><button class="add" id="addPlayer" ${draftNames.length>=10?'disabled':''}>＋ إضافة لاعبة</button><div class="error" id="nameError"></div><div class="buttons"><button class="primary" id="startBtn">يلا نبدأ العزيمة ←</button>${saved&&saved.mode!=='finale'?'<button class="secondary" id="resumeBtn">↩ متابعة الجلسة السابقة</button>':''}</div><details><summary>وش نظام اللعبة والنقاط؟</summary><p>تتناوب اللاعبات على ٨ مواقف عبر ٤ مراحل: التجهيز، الاستقبال، السفرة، الختام. كل قرار يؤثر في الميزانية والوقت ووناسة الضيوف، ويحدد الموقف التالي. بعد كل مرحلة تقريبًا تحدٍ تمثيلي أو سريع، وتحكم المجموعة هل نجح. في النهاية تظهر نتيجة العزيمة وأعلى لاعبة نقاطًا.</p></details><p class="fine">مدة الجولة غالبًا من ١٠ إلى ١٥ دقيقة، والنصوص مناسبة للعائلة. ما تحتاج تسجيل أو اتصال إنترنت.</p></section>`);
+    document.querySelectorAll('[data-player]').forEach(el=>el.addEventListener('input',e=>{draftNames[+e.target.dataset.player]=e.target.value;}));
+    document.querySelectorAll('[data-remove]').forEach(el=>el.addEventListener('click',e=>{if(draftNames.length>2){draftNames.splice(+e.target.dataset.remove,1);render();}}));
+    $('addPlayer').onclick=()=>{if(draftNames.length<10){draftNames.push('');render();const els=document.querySelectorAll('[data-player]');els[els.length-1]?.focus();}};
+    $('startBtn').onclick=startGame;
+    if($('resumeBtn'))$('resumeBtn').onclick=()=>{game=structuredClone(saved);screen='game';render();};
+  }
+  function startGame(){const names=draftNames.map(x=>x.trim()).filter(Boolean);if(names.length<2||names.length>10){const el=$('nameError');el.textContent='اكتبوا اسم لاعبتين على الأقل (وحتى ١٠).';el.classList.add('visible');return;}
+    game={players:names.map(name=>({name,score:0})),stats:{budget:75,time:72,mood:65},turn:0,mode:'play',routes:{},last:null,history:[],challengeOrder:shuffle(challenges.map((_,i)=>i)).slice(0,3),challengeResult:null};screen='game';persist();beep('ok');render();}
+  function statMarkup(){return `<div class="stats">${statsMeta.map(([key,ic,label])=>{const v=game.stats[key];return `<div class="stat"><div class="stat-top"><span>${ic} ${label}</span><b>${v}٪</b></div><div class="meter ${key} ${v<30?'low':''}"><span style="width:${v}%"></span></div></div>`;}).join('')}</div>`;}
+  function progressMarkup(){const idx=Math.min(game.turn,7),act=Math.floor(idx/2);return `<div class="stage-line"><span class="pill">${acts[act].icon} المرحلة ${act+1} من ٤: ${acts[act].name}</span><b>الموقف ${Math.min(game.turn+1,8)} / ٨</b></div><div class="track" role="progressbar" aria-label="تقدم اللعبة" aria-valuemin="0" aria-valuemax="8" aria-valuenow="${game.turn}"><span style="width:${game.turn/8*100}%"></span></div>`;}
+  function playersMarkup(){const active=game.turn%game.players.length;return `<div class="playerbar"><p class="player-title">🏅 نقاط اللاعبات</p><div class="chips">${game.players.map((p,i)=>`<span class="playerchip ${i===active?'active':''}">${escapeHtml(p.name)} · ${p.score} ⭐</span>`).join('')}</div></div>`;}
+  function currentScene(){const act=acts[Math.floor(game.turn/2)];if(game.turn%2===0)return act.main;return act.follow[game.routes[Math.floor(game.turn/2)]||'a'];}
+  function renderPlay(){const scene=currentScene(),idx=game.turn%game.players.length;
+    box(hero('وقت القرارات • الكل يشارك','العزيمة دخلت الجد!','ناقشوا الموقف شوي، وصاحبة الدور تختار القرار النهائي.','🥘 🫖')+`<section class="body">${progressMarkup()}${statMarkup()}<div class="story"><div class="emoji" aria-hidden="true">${scene.emoji}</div><p class="section-label">${acts[Math.floor(game.turn/2)].intro}</p><h2>${scene.title}</h2><p>${scene.desc}</p></div><div class="player-callout">🎤 الدور على ${escapeHtml(game.players[idx].name)} — وش القرار؟</div><div class="choices">${scene.options.map((o,i)=>`<button class="choice" data-choice="${i}"><span>${escapeHtml(o.t)}</span><em>${['أ','ب','ج'][i]}</em></button>`).join('')}</div><p class="fine">كل خيار له أثر مختلف... اختاري قبل ما تعرفين وش بيصير! 🤫</p>${playersMarkup()}</section>`);
+    document.querySelectorAll('[data-choice]').forEach(b=>b.onclick=()=>choose(+b.dataset.choice));
+  }
+  function choose(index){if(game.mode!=='play')return;const option=currentScene().options[index];if(!option)return;const pi=game.turn%game.players.length;const before={...game.stats};let n=0;for(const [i,k] of ['budget','time','mood'].entries()){game.stats[k]=Math.max(0,Math.min(100,game.stats[k]+option.d[i]));n+=game.stats[k]-before[k];}
+    game.players[pi].score+=option.p;if(game.turn%2===0)game.routes[Math.floor(game.turn/2)]=option.to;
+    game.last={type:'choice',name:game.players[pi].name,choice:option.t,r:option.r,d:option.d,pts:option.p,actual:statsMeta.map(([k])=>game.stats[k]-before[k]),bonus:n};game.history.push({turn:game.turn,player:game.players[pi].name,choice:option.t});game.mode='choiceOutcome';persist();beep(n<0?'bad':'ok');render();}
+  function deltaText(key,v){const m={budget:'الميزانية',time:'الوقت',mood:'الوناسة'};return `<span class="delta ${v>0?'good':v<0?'bad':''}">${m[key]} ${v>0?'+':''}${v}٪</span>`;}
+  function renderChoiceOutcome(){const x=game.last;box(hero('تأثير القرار','وش اللي صار؟','حتى القرار اللي يورطكم يقدر يصنع أحلى سالفة!','💥 ✨')+`<section class="body">${progressMarkup()}${statMarkup()}<div class="story"><div class="result-icon">${x.bonus>=0?'🎉':'🙈'}</div><h2 class="result-heading">${escapeHtml(x.name)} اختارت:</h2><p><b>${escapeHtml(x.choice)}</b></p><div class="effect">${escapeHtml(x.r)}</div><div class="delta-list">${x.actual.map((v,i)=>deltaText(statsMeta[i][0],v)).join('')}</div><div class="points">⭐ ${escapeHtml(x.name)} كسبت ${x.pts} نقاط</div></div><div class="buttons"><button id="next" class="primary">${game.turn===7?'شوفوا نهاية العزيمة 🏆':'الموقف اللي بعده ←'}</button></div>${playersMarkup()}</section>`);
+    $('next').onclick=()=>{game.turn++;if(game.turn===8){game.mode='finale';beep('win');burst();}else if([2,4,6].includes(game.turn)){game.mode='challenge';}else game.mode='play';persist();render();};}
+  function selectedChallenge(){const idx=Math.max(0,Math.min(2,(game.turn/2)-1));return challenges[game.challengeOrder[idx]]||challenges[0];}
+  function challengePersonIndex(){return game.players.length>8?(8+game.turn/2-1)%game.players.length:(game.turn-1)%game.players.length;}
+  function renderChallenge(){const c=selectedChallenge(),previous=game.players[challengePersonIndex()];remaining=c.sec;
+    box(hero('بطاقة مفاجأة','تحدّي اللمّة!','هنا يبان مين عندها أسرع بديهة وأحلى تمثيل.','🎭 ⏱️')+`<section class="body">${statMarkup()}<div class="challenge"><div class="big-emoji">${c.emoji}</div><h2>${c.title}</h2><p>${c.desc}</p><p class="player-callout">🎤 التحدي على ${escapeHtml(previous.name)}</p><div class="timer" id="countdown" role="timer">${c.sec}</div><div class="challenge-controls"><button id="goTimer" class="primary">⏱ ابدئي التحدي</button><p class="hint" id="challengeHint">إذا بدأتِ، تحسب الساعة. باقي اللاعبات يحكمن بعد المحاولة.</p><div class="challenge-judge" id="judges" hidden><button class="secondary success" id="pass">👏 نجحت!</button><button class="secondary failure" id="fail">😅 ما ضبط!</button></div></div></div><p class="fine">الحكم بالاتفاق بينكم؛ النجاح يزيد وناسة العزيمة ويمنح نقاطًا.</p></section>`);
+    $('goTimer').onclick=()=>{if(ticker)return;beep('ok');$('goTimer').disabled=true;$('goTimer').textContent='التحدي شغّال...';$('judges').hidden=false;remaining=c.sec;const timerEl=$('countdown');ticker=setInterval(()=>{remaining--;timerEl.textContent=Math.max(0,remaining);if(remaining<=0){clearTicker();timerEl.classList.add('finished');$('challengeHint').textContent='⏰ انتهى الوقت! صوتوا: نجحت ولا ما ضبط؟';beep('bad');}},1000);};
+    $('pass').onclick=()=>finishChallenge(true);
+    $('fail').onclick=()=>finishChallenge(false);
+  }
+  function finishChallenge(ok){if(game.mode!=='challenge')return;clearTicker();const idx=challengePersonIndex();const before=game.stats.mood,change=ok?7:-3;game.stats.mood=Math.min(100,Math.max(0,before+change));if(ok)game.players[idx].score+=6;game.challengeResult={ok,name:game.players[idx].name,d:game.stats.mood-before,points:ok?6:0};game.mode='challengeOutcome';persist();if(ok){beep('win');burst();}else beep('bad');render();}
+  function renderChallengeOutcome(){const r=game.challengeResult;box(hero('نتيجة تحدّي اللمّة',r.ok?'يا سلام عليكم!':'يا ساتر، راحت علينا!','مهما كانت النتيجة، العزيمة للحين مستمرة.','🎉 😅')+`<section class="body">${statMarkup()}<div class="story"><div class="result-icon">${r.ok?'🏅':'🤭'}</div><h2>${r.ok?'كفو يا '+escapeHtml(r.name)+'!':'عوافي يا '+escapeHtml(r.name)+'!'}</h2><p>${r.ok?'أبدعتي في التحدي ورفعتِ معنويات العزيمة.':'المحاولة لحالها سالفة، يلا نلحق باقي العزيمة!'}</p><div class="delta-list">${deltaText('mood',r.d)}</div><div class="points">⭐ نقاط التحدي: ${r.points}</div></div><div class="buttons"><button class="primary" id="continueAfterChallenge">نكمل السالفة ←</button></div></section>`);$('continueAfterChallenge').onclick=()=>{game.mode='play';persist();render();};}
+  function rank(){return [...game.players].sort((a,b)=>b.score-a.score);}
+  function conclusion(){const s=game.stats;const score=Math.round(s.budget*.22+s.time*.22+s.mood*.56);
+    if(score>=84)return {title:'عزيمة أسطورية!',emoji:'🏆',text:'الضيوف يسألون عن موعد العزيمة الجاية، وصارت السالفة حديث اللمّة!'};
+    if(score>=65)return {title:'عزيمة تفتح النفس!',emoji:'✨',text:'طلعت العزيمة ناجحة رغم المفاجآت. واضح إن عندكم حلول لكل ورطة!'};
+    if(score>=45)return {title:'عدّت على خير!',emoji:'😅',text:'صار فيها لخبطة، بس أهم شيء الضحكة والجمعة الحلوة.'};
+    return {title:'يا ساتر! وش هالعزيمة؟',emoji:'🙈',text:'يمكن العشاء تعثر... بس كمية السوالف اللي طلعت تستاهل إعادة التجربة!'};
+  }
+  function resultsText(){const c=conclusion();const winners=rank();return `يا ساتر! جتنا عزيمة 🫖\n${c.emoji} ${c.title}\n💰 الميزانية: ${game.stats.budget}٪\n⏳ الوقت: ${game.stats.time}٪\n💗 الوناسة: ${game.stats.mood}٪\n\nنقاط اللاعبات:\n${winners.map((p,i)=>`${i+1}. ${p.name}: ${p.score} نقطة`).join('\n')}\n\n#يا_ساتر_جتنا_عزيمة`;}
+  function renderFinal(){const c=conclusion(),sorted=rank(),best=sorted[0].score,champions=sorted.filter(p=>p.score===best).map(p=>p.name).join(' و ');
+    box(hero('خلصت عزيمتنا','والحمد لله على السلامة!','كل قرار غيّر القصة، وكل لاعبة تركت بصمتها في العزيمة.','🫖 🎊')+`<section class="body"><div class="end-box"><div class="result-icon">${c.emoji}</div><span class="badge-score">نتيجة العزيمة</span><h2>${c.title}</h2><p>${c.text}</p><div>👑 نجمة اللمّة: <b>${escapeHtml(champions)}</b></div></div><h3>كيف طلعت عزيمتنا؟</h3>${statMarkup()}<h3>🏅 ترتيب اللاعبات</h3><div class="leaderboard">${sorted.map((p,i)=>`<div class="leader"><span><span class="medal">${i===0?'🥇':i===1?'🥈':i===2?'🥉':'⭐'}</span>${escapeHtml(p.name)}</span><b>${p.score} نقطة</b></div>`).join('')}</div><div class="buttons"><button class="primary" id="replay">🔄 جلسة جديدة</button><button class="secondary" id="copyResult">📋 نسخ النتيجة</button></div><p class="fine">جرّبوا خيارات ثانية في الجولة الجاية: لها مواقف وتحديات ونهايات مختلفة.</p></section>`);
+    $('replay').onclick=()=>{draftNames=game.players.map(x=>x.name);game=null;screen='setup';try{localStorage.removeItem(SAVE_KEY);}catch(_){}saved=null;render();};$('copyResult').onclick=copyResults;
+  }
+  async function copyResults(){const s=resultsText();try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(s);toast('تم نسخ النتيجة 📋');return;}}catch(_){}
+    const ta=document.createElement('textarea');ta.value=s;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.focus();ta.select();let ok=false;try{ok=document.execCommand('copy');}catch(_){}ta.remove();if(ok)toast('تم نسخ النتيجة 📋');else{window.prompt('انسخي النتيجة:',s);}}
+  $('soundBtn').onclick=()=>{soundOn=!soundOn;try{localStorage.setItem(SOUND_KEY,soundOn?'on':'off');}catch(_){}render();if(soundOn)beep('ok');};
+  $('homeBtn').onclick=()=>{if(screen==='game'&&game&&game.mode!=='finale'){if(!confirm('تبغون ترجعون للبداية؟ الجولة محفوظة وتقدرون تكملونها.'))return;}screen='setup';render();};
+  render();
+  </script>
+</body>
+</html>
